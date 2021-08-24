@@ -1,10 +1,11 @@
-namespace GameNews.Models
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace GameStock.Models
 {
     public class LoginUser
     {
-         [NotMapped] // don't add table to db
-    public class LoginUser
-    {
+        [NotMapped] // don't add table to db
         [Required(ErrorMessage = "is required.")]
         [EmailAddress]
         [Display(Name = "Email")]
@@ -16,5 +17,4 @@ namespace GameNews.Models
         [Display(Name = "Password")]
         public string LoginPassword { get; set; }
     }
-}
 }

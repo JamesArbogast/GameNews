@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GameNews.Models
+namespace GameStock.Models
 {
     public class User
     {
@@ -14,11 +14,6 @@ namespace GameNews.Models
         [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
         [Display(Name = "First name")]
         public string FirstName { get; set; }
-        [Required(ErrorMessage = "is required")]
-        [MinLength(2, ErrorMessage = "must be at least 2 characters")]
-        [Display(Name = "Last Name")]
-        public string LastName { get; set; }
-        public string Password { get; set; }
 
         [Required(ErrorMessage = "Is requried.")]
         [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
