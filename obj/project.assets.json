@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    ".NETCoreApp,Version=v5.0": {
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -782,25 +782,25 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    ".NETCoreApp,Version=v5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Pomelo.EntityFrameworkCore.MySql >= 5.0.0-alpha.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\james\\.nuget\\packages\\": {}
+    "/Users/javanogden/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
+      "projectUniqueName": "/Users/javanogden/Desktop/GameNews/GameNews.csproj",
       "projectName": "GameNews",
-      "projectPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
-      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\obj\\",
+      "projectPath": "/Users/javanogden/Desktop/GameNews/GameNews.csproj",
+      "packagesPath": "/Users/javanogden/.nuget/packages/",
+      "outputPath": "/Users/javanogden/Desktop/GameNews/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/javanogden/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -810,7 +810,6 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -822,7 +821,6 @@
     },
     "frameworks": {
       "net5.0": {
-        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -835,25 +833,7 @@
             "version": "[5.0.0-alpha.2, )"
           }
         },
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
       }
     }
   }
