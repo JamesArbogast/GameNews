@@ -15619,6 +15619,11 @@
   "RootNamespace": "GameNews",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\Views\\Game\\Details.cshtml",
+      "TargetPath": "Views\\Game\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
