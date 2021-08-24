@@ -13,6 +13,11 @@ namespace ProjName.Models
         [MinLength(2, ErrorMessage = "must be at least 2 characters")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
+        [Required(ErrorMessage = "is required")]
+        [MinLength(2, ErrorMessage = "must be at least 2 characters")]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        public string Password { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
