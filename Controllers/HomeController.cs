@@ -5,15 +5,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using GameNews.Models;
+using GameStock.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 
-namespace GameNews.Controllers
+namespace GameStock.Controllers
 {
     public class HomeController : Controller
     {
         
-        private likedGameContext db;
-    public HomeController(likedGameContext context)
+    private GameStockContext db;
+    public HomeController(GameStockContext context)
     {
         db = context;
     }
@@ -113,18 +115,6 @@ namespace GameNews.Controllers
             HttpContext.Session.SetString("FirstName", dbUser.FirstName);
             return RedirectToAction("Dashboard", "Game");
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
         public IActionResult Privacy()
         {
