@@ -1,20 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj": {}
+<<<<<<< HEAD
+    "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj": {}
   },
   "projects": {
-    "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj": {
+    "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
+        "projectUniqueName": "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj",
         "projectName": "GameNews",
-        "projectPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
-        "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\obj\\",
+        "projectPath": "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj",
+        "packagesPath": "C:\\Users\\Myles\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Myles\\Desktop\\GameNews\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Myles\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "/Users/javanogden/Desktop/GameNews/GameNews.csproj": {}
+  },
+  "projects": {
+    "/Users/javanogden/Desktop/GameNews/GameNews.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/javanogden/Desktop/GameNews/GameNews.csproj",
+        "projectName": "GameNews",
+        "projectPath": "/Users/javanogden/Desktop/GameNews/GameNews.csproj",
+        "packagesPath": "/Users/javanogden/.nuget/packages/",
+        "outputPath": "/Users/javanogden/Desktop/GameNews/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/javanogden/.nuget/NuGet/NuGet.Config"
+>>>>>>> 225235e47ab05c0be1ce21d75df6aed1999b5e0d
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -24,7 +41,6 @@
         },
         "frameworks": {
           "net5.0": {
-            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -36,7 +52,6 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -53,6 +68,7 @@
               "version": "[5.0.0-alpha.2, )"
             }
           },
+<<<<<<< HEAD
           "imports": [
             "net461",
             "net462",
@@ -71,7 +87,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+>>>>>>> 225235e47ab05c0be1ce21d75df6aed1999b5e0d
         }
       }
     }

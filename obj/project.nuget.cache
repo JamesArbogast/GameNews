@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Y8R7MhzOMDck6xOLKs8kMo+Tg31mdsq/JhtDoXrTUd/5lqpzVglvzkBWbnhGKuHItA86Elrmzhy70GZK7dcTA==",
+  "dgSpecHash": "25rPFIZQpc5k+kX/vRnc6dzaw9IhHeDV9Ki2NxBuSboaVz3ETnZeawUcmXvrV17sHH8rIrN2hog6AIpgP4bepQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
+  "projectFilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -27,5 +27,12 @@
     "C:\\Users\\james\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

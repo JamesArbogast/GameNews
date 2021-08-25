@@ -1,8 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    @* var client = new HttpClient();
+        var request = new HttpRequestMessage
+        {
+        Method = HttpMethod.Get,
+        RequestUri = new Uri("https://rawg-video-games-database.p.rapidapi.com/games/%7Bgame_pk%7D"),
+        Headers =
+        {
+        { "x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com" },
+        { "x-rapidapi-key", "ea3628689bmshbe5095a0c78c90ap19243ajsn12b4e221879a" },
+        },
+        };
+        using (var response = await client.SendAsync(request))
+        {
+        response.EnsureSuccessStatusCode();
+        var body = await response.Content.ReadAsStringAsync();
+        Console.WriteLine(body);
+        } *@
 }
 
-<div class="text-center">
-    <h1 class="display-4">Good Morning Fellow Wambats!</h1>
 
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+        </div>
+        <div class="col-sm-6">
+            <div class="border border-dark rounded-left m-3 shadow p-3 mb-2 bg-white rounded">
+                <partial name="_Login"></partial>
+            </div>
+            <div class="border border-dark rounded-left m-3 shadow p-3 mb-2 bg-white rounded">
+                <partial name="_Register"></partial>
+            </div>
+        </div>
+    </div>
 </div>
