@@ -1,0 +1,45 @@
+@model Game
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Name</h1>
+    <div class="card-header bg-dark text-light">
+      <div>
+        <img src="@Model.ImgUrl" />
+      </div>
+      <div>@Model.CurrentRating:</div>
+      <div>@Model.Creator:</div>
+      <div>
+        <h3>Genres</h3>
+        <ul>
+        @foreach(string genre in @Model.Genres)
+        {
+          <li>@genre</li> 
+        }
+        </ul>
+      </div>
+      <div>
+        <h3>Platforms</h3>
+        <ul>
+        @foreach(string platform in @Model.Platforms)
+          {
+            <li>@platform</li>
+          }
+        </ul>
+      </div>
+        <h3>Vendors and Prices</h3>
+        <ul>
+          @foreach (string vendor in @Model.Vendors)
+          {
+              <li>@vendor</li>
+          }
+        </ul>
+        <ul>
+          @foreach (int price in @Model.Prices)
+          {
+              <li>@price</li>
+          }
+        </ul>
+
+    </div>
+    <div class="card-body">
+</div>

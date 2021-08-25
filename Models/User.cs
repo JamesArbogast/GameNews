@@ -21,7 +21,7 @@ namespace GameStock.Models
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Is requried.")]
-        [AllowMultiple(false, ErrorMessage = "Username must be unique.")]
+        // [AllowMultiple(false, ErrorMessage = "Username must be unique.")]
         [MinLength(4, ErrorMessage = "Must be at least 4 characters.")]
         [Display(Name = "Username")]
         public string UserName { get; set; }
@@ -45,7 +45,8 @@ namespace GameStock.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public string GameReview { get; set; }
-        public GameReview GameReviews { get; set; }
-        public List<LikedGame> likedGames { get; set; }
+        public List<GameReview> GameReviews { get; set; }
+        public List<Game> Games { get; set; }
+
     }
 }

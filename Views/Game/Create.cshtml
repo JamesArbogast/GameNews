@@ -7,25 +7,25 @@
   <div class="form-group">
     <label asp-for="Name"></label>
     <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
-    <input asp-for="Name" class="form-control" value="@Model.Name" />
+    <input asp-for="Name" class="form-control" />
   </div>
 
   <div class="form-group">
     <label asp-for="CurrentRating"></label>
     <span asp-validation-for="CurrentRating" class="text-danger font-weight-bold"></span>
-    <input asp-for="CurrentRating" class="form-control" value="@Model.CurrentRating" />
+    <input asp-for="CurrentRating" class="form-control" />
   </div>
 
   <div class="form-group">
     <label asp-for="Creator"></label>
     <span asp-validation-for="Creator" class="text-danger font-weight-bold"></span>
-    <input asp-for="Creator" class="form-control" value="@Model.Creator"/>
+    <input asp-for="Creator" class="form-control" />
   </div>
 
   <div class="form-group">
     <label asp-for="Genres"></label>
     <span asp-validation-for="Genres" class="text-danger font-weight-bold"></span>
-    <select asp-for="Genres" class="form-control" value="@Model.Genres">
+    <select asp-for="Genres" class="form-control">
       <option value="FPS">FPS</option>
       <option value="Puzzle">Puzzle</option>
       <option value="RTS">RTS</option>
@@ -40,7 +40,7 @@
   <div class="form-group">
     <label asp-for="Platforms"></label>
     <span asp-validation-for="Platforms" class="text-danger font-weight-bold"></span>
-    <select asp-for="Platforms" class="form-control" value="@Model.Platforms">
+    <select asp-for="Platforms" class="form-control">
       <option value="PC">PC</option>
       <option value="Playstation 5">Playstation 5</option>
       <option value="Xbox Series X">Xbox Series X</option>
@@ -55,14 +55,18 @@
   <div class="form-group">
     <label asp-for="Prices"></label>
     <span asp-validation-for="Prices" class="text-danger font-weight-bold"></span>
-    <input asp-for="Prices" class="form-control" value="@Model.Prices">
+    <input asp-for="Prices" class="form-control" value="Price 1">
+    <input asp-for="Prices" class="form-control" value="Price 2">
+    <input asp-for="Prices" class="form-control" value="Price 3">
     </select>
   </div>
 
   <div class="form-group">
     <label asp-for="Vendors"></label>
     <span asp-validation-for="Vendors" class="text-danger font-weight-bold"></span>
-    <input asp-for="Vendors" class="form-control" value="@Model.Vendors">
+    <input asp-for="Vendors" class="form-control" value="Vendor 1">
+    <input asp-for="Vendors" class="form-control" value="Vendor 2">
+    <input asp-for="Vendors" class="form-control" value="Vendor 3">
     </select>
   </div>
 

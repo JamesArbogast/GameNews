@@ -4,14 +4,14 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using likedGames.Models;
+using GameStock.Models;
 
 namespace likedGames.Controllers
 {
     public class GameController : Controller
     {
-        private likedGameContext db;
-        public GameController(likedGameContext context)
+        private GameStockContext db;
+        public GameController(GameStockContext context)
         {
             db = context;
         }
@@ -75,10 +75,8 @@ namespace likedGames.Controllers
             }
             
             List<Game> allGames = db.Games
-
-                .Include(game => game.CreatedBy) // hover over the param to see it's data type
-                
-                .Include(game => game.likedGames)
+                .Include(game => game.Creator) // hover over the param to see it's data type
+                .Include(game => game.LikedGames)
                 .ToList();
             return View("Dashboard", allGames);
         }
@@ -93,7 +91,7 @@ namespace likedGames.Controllers
 
             Game game = db.Games
                 .Include(game => game.CreatedBy)
-                .Include(game => game.likedGames)
+                .Include(game => game.LikedGames)
                 // Include something from the last thing that was included.
                 // Include the User from the likes (hover over like param to see data type)
                 .ThenInclude(like => like.CreatedBy)
@@ -160,10 +158,14 @@ namespace likedGames.Controllers
                 return RedirectToAction("Dashboard");
             }
 
-            dbGame.Title = editedGame.Title;
-            dbGame.Description = editedGame.Description;
-            dbGame.Rating = editedGame.Rating;
-            dbGame.Src = editedGame.Src;
+            dbGame.Name = editedGame.Name;
+            dbGame.Genres = editedGame.Genres;
+            dbGame.Platforms = editedGame.Platforms;
+            dbGame.Prices = editedGame.Prices;
+            dbGame.Vendors = editedGame.Vendors;
+            dbGame.Genres = editedGame.Genres;
+            dbGame.CurrentRating = editedGame.CurrentRating;
+            dbGame.ImgUrl = editedGame.ImgUrl;
             dbGame.UpdatedAt = DateTime.Now;
 
             db.Games.Update(dbGame);
@@ -187,22 +189,22 @@ namespace likedGames.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            LikedGame likedGame = db.LikedGames
+            GameReview reviewedGame = db.GameReviews
                 .FirstOrDefault(rsvp => rsvp.UserId == (int)uid && rsvp.GameId == gameId);
 
-            if (likedGame == null)
+            if (reviewedGame == null)
             {
-                LikedGame like = new LikedGame()
+                GameReview gameRev = new GameReview()
                 {
                     GameId = gameId,
                     UserId = (int)uid
                 };
 
-                db.LikedGames.Add(like);
+                db.GameReviews.Add(gameRev);
             }
             else
             {
-                db.LikedGames.Remove(likedGame);
+                db.GameReviews.Remove(reviewedGame);
             }
 
 
