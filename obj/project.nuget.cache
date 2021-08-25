@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MXspe3FHisZfxMirOuCgyRahUUcdJp3DfhN2Ysc+2F8ypXPNmDkXS9XjJRqZsIBPhb1iZSRXif3dMSX2aD/JOQ==",
+  "dgSpecHash": "0Y8R7MhzOMDck6xOLKs8kMo+Tg31mdsq/JhtDoXrTUd/5lqpzVglvzkBWbnhGKuHItA86Elrmzhy70GZK7dcTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\james\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\mysqlconnector\\1.1.0\\mysqlconnector.1.1.0.nupkg.sha512",
+    "C:\\Users\\james\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.0-alpha.2\\pomelo.entityframeworkcore.mysql.5.0.0-alpha.2.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

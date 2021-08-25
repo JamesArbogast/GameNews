@@ -4,11 +4,30 @@
     <h1 class="display-4">@Model.Name</h1>
     <div class="card-header bg-dark text-light">
       <div>
-        
+        <img src="" />
       </div>
-      <div>Genres:</div>
+      <div>@Model.CurrentRating:</div>
+      <div>@Model.Creator:</div>
+      <div>
+        <h3>Genres</h3>
+        <ul>
+        @foreach(string genre in @Model.Genres)
+          {
+            <li>@genre</li> 
+          }
+        </ul>
+      </div>
+      <div>
+        <h3>Platforms</h3>
+        <ul>
+        @foreach(string platform in @Model.Platforms)
+          {
+            <li>@platform</li>
+          }
+        </ul>
+      </div>
+      <div>Vendors and Prices</div>
       <ul>
-
       </ul>
     </div>
     <div class="card-body">

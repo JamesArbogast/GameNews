@@ -20,6 +20,7 @@ namespace GameStock.Models
         public List<int> Prices { get; set; }
         public List<string> Vendors { get; set; }
         public int CurrentRating { get; set; } 
+        public string Creator { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
