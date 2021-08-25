@@ -1,6 +1,6 @@
 using System;
 
-namespace GameNews.Models
+namespace GameStock.Models
 {
     public class ErrorViewModel
     {

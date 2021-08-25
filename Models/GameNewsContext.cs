@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ProjName.Models
+namespace GameStock.Models
 {
     public class GameNewsContext : DbContext
     {

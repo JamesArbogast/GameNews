@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GameNews.Models
+namespace GameStock.Models
 {
     public class User
     {
@@ -19,6 +19,12 @@ namespace GameNews.Models
         [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [Required(ErrorMessage = "Is requried.")]
+        [AllowMultiple(false)]
+        [MinLength(4, ErrorMessage = "Must be at least 4 characters.")]
+        [Display(Name = "Username")]
+        public string UserName { get; set; }
 
         [Required(ErrorMessage = "Is required.")]
         [EmailAddress]
@@ -36,10 +42,8 @@ namespace GameNews.Models
         [Compare("Password", ErrorMessage = "Passwords don't match!")]
         [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
-
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
-
-
+        public List<LikedGame> likedGames { get; set; }
     }
 }
