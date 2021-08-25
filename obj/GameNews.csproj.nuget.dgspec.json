@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj": {}
+    "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\GameNews.csproj": {}
   },
   "projects": {
-    "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj": {
+    "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\GameNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
+        "projectUniqueName": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\GameNews.csproj",
         "projectName": "GameNews",
-        "projectPath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\GameNews.csproj",
+        "projectPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\GameNews.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\obj\\",
+        "outputPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,6 +51,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[5.0.0-alpha.2, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.12.0, )"
             }
           },
           "imports": [

@@ -46,6 +46,7 @@ namespace GameStock.Controllers
             request.AddHeader("x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com");
             request.AddHeader("x-rapidapi-key", "0f4b745fe9mshbe29f523ee718eep15fe8ajsnbb2b87bacabe");
             IRestResponse response = client.Execute(request);
+            return View("Index");
         }
 
         [HttpPost("/register")]
