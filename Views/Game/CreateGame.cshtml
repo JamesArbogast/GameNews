@@ -1,0 +1,44 @@
+@model Game
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h1>Welcome to The Game List</h1>
+    </div>
+    <div class="col-6">
+      <a href="/Dashboard">Dashboard</a>
+    </div>
+  </div>
+</div>
+<form asp-controller="Game" asp-action="Create" method="POST">
+  <div class="form-group">
+    <label asp-for="Title"></label>
+    <span asp-validation-for="Title" class="text-danger font-weight-bold"></span>
+    <input asp-for="Title" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Description"></label>
+    <span asp-validation-for="Description" class="text-danger font-weight-bold"></span>
+    <input asp-for="Description" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Rating"></label>
+    <span asp-validation-for="Rating" class="text-danger font-weight-bold"></span>
+    <input asp-for="Rating" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Src"></label>
+    <span asp-validation-for="Src" class="text-danger font-weight-bold"></span>
+    @* prefill password for testing for easy register & login *@
+    <input asp-for="Src" class="form-control" value="asdfasdf" />
+  </div>
+
+  <button class="btn btn-outline-primary">Register</button>
+</form>
