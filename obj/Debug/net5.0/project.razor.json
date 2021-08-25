@@ -15652,6 +15652,11 @@
       "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameNews\\Views\\Game\\Dashboard.cshtml",
+      "TargetPath": "Views\\Game\\Dashboard.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
