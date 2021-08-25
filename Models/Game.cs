@@ -34,6 +34,9 @@ namespace GameStock.Models
         public int UserId { get; set; }
         public User CreatedBy { get; set; }
 
+        public string GameReview { get; set; }
+        public GameReview GameReviews { get; set; }
+
         public List<LikedGame> LikedGames { get; set; }
     }
 }
