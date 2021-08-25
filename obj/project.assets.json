@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    ".NETCoreApp,Version=v5.0": {
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -782,17 +782,22 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    ".NETCoreApp,Version=v5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.5",
       "Pomelo.EntityFrameworkCore.MySql >= 5.0.0-alpha.2"
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Myles\\.nuget\\packages\\": {}
+=======
+    "/Users/javanogden/.nuget/packages/": {}
+>>>>>>> 225235e47ab05c0be1ce21d75df6aed1999b5e0d
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj",
       "projectName": "GameNews",
       "projectPath": "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj",
@@ -801,6 +806,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Myles\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "/Users/javanogden/Desktop/GameNews/GameNews.csproj",
+      "projectName": "GameNews",
+      "projectPath": "/Users/javanogden/Desktop/GameNews/GameNews.csproj",
+      "packagesPath": "/Users/javanogden/.nuget/packages/",
+      "outputPath": "/Users/javanogden/Desktop/GameNews/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/javanogden/.nuget/NuGet/NuGet.Config"
+>>>>>>> 225235e47ab05c0be1ce21d75df6aed1999b5e0d
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -810,7 +825,6 @@
       },
       "frameworks": {
         "net5.0": {
-          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -822,7 +836,6 @@
     },
     "frameworks": {
       "net5.0": {
-        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -835,6 +848,7 @@
             "version": "[5.0.0-alpha.2, )"
           }
         },
+<<<<<<< HEAD
         "imports": [
           "net461",
           "net462",
@@ -854,6 +868,9 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+>>>>>>> 225235e47ab05c0be1ce21d75df6aed1999b5e0d
       }
     }
   }
