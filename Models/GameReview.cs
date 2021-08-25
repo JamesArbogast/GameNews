@@ -10,7 +10,7 @@ namespace GameStock.Models
         [Required(ErrorMessage = "is required.")]
         [MinLength(5, ErrorMessage = "must be at least 5 characters")]
         [Display(Name = "Game Review")]
-        public string GameReview { get; set; }
+        public string Review { get; set; }
         [Required(ErrorMessage = "is required.")]
         [Display(Name = "Game Rating")]
         public int GameRating { get; set; }

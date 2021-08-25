@@ -45,7 +45,8 @@ namespace GameStock.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public string GameReview { get; set; }
-        public GameReview GameReviews { get; set; }
-        public List<LikedGame> likedGames { get; set; }
+        public List<GameReview> GameReviews { get; set; }
+        public List<Game> Games { get; set; }
+
     }
 }
