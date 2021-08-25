@@ -44,6 +44,8 @@ namespace GameStock.Models
         public string ConfirmPassword { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
+        public string GameReview { get; set; }
+        public GameReview GameReviews { get; set; }
         public List<LikedGame> likedGames { get; set; }
     }
 }
