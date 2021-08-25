@@ -22,17 +22,17 @@ namespace GameStock
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddDbContext<GameStockContext>(options => options.UseMySql(
-                Configuration["DBInfo:ConnectionString"],
-                ServerVersion.FromString("8.0.23-mysql")));
-    
-        // to access session directly from view, corresponds with: @using Microsoft.AspNetCore.Http in Views/_ViewImports.cshtml
-        services.AddHttpContextAccessor();
-        services.AddSession();
-        services.AddMvc(options => options.EnableEndpointRouting = false);
-    }
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext<GameStockContext>(options => options.UseMySql(
+                    Configuration["DBInfo:ConnectionString"],
+                    ServerVersion.FromString("8.0.23-mysql")));
+
+            // to access session directly from view, corresponds with: @using Microsoft.AspNetCore.Http in Views/_ViewImports.cshtml
+            services.AddHttpContextAccessor();
+            services.AddSession();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+        }
 
 
 
@@ -47,7 +47,7 @@ namespace GameStock
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-        
+
             // css, js, and image files can now be added to wwwroot folder
             app.UseStaticFiles();
             app.UseSession();

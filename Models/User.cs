@@ -20,6 +20,12 @@ namespace GameStock.Models
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
+        [Required(ErrorMessage = "Is requried.")]
+        [AllowMultiple(false)]
+        [MinLength(4, ErrorMessage = "Must be at least 4 characters.")]
+        [Display(Name = "Username")]
+        public string UserName { get; set; }
+
         [Required(ErrorMessage = "Is required.")]
         [EmailAddress]
         public string Email { get; set; }
@@ -36,9 +42,8 @@ namespace GameStock.Models
         [Compare("Password", ErrorMessage = "Passwords don't match!")]
         [Display(Name = "Confirm Password")]
         public string ConfirmPassword { get; set; }
-
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
-
+        public List<LikedGame> likedGames { get; set; }
     }
 }
