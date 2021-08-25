@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GameStock.Models;
+using RestSharp;
+using RestSharp.Authenticators;
 
 namespace likedGames.Controllers
 {
@@ -33,13 +35,14 @@ namespace likedGames.Controllers
         [HttpGet("/games/new")]
         public IActionResult New()
         {
-            if (!isLoggedIn) {
+            if (!isLoggedIn)
+            {
                 return RedirectToAction("Index", "Home");
             }
 
             return View("New");
         }
-    //Create() talks to form asp-action make sure its the same
+        //Create() talks to form asp-action make sure its the same
         [HttpPost("/games/create")]
         public IActionResult Create(Game newGame)
         {
@@ -70,12 +73,19 @@ namespace likedGames.Controllers
         [HttpGet("/Dashboard")]
         public IActionResult Dashboard()
         {
-            if (!isLoggedIn) {
+            if (!isLoggedIn)
+            {
                 return RedirectToAction("Index", "Home");
             }
-            
-            List<Game> allGames = db.Games
-                .Include(game => game.Creator) // hover over the param to see it's data type
+
+            var client = new RestClient("https://rawg-video-games-database.p.rapidapi.com/games");
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com");
+            request.AddHeader("x-rapidapi-key", "0f4b745fe9mshbe29f523ee718eep15fe8ajsnbb2b87bacabe");
+            IRestResponse response = client.Execute(request);
+            Console.WriteLine(response);
+
+            List<Game> allGames = db.Games // hover over the param to see it's data type
                 .Include(game => game.LikedGames)
                 .ToList();
             return View("Dashboard", allGames);
@@ -84,7 +94,8 @@ namespace likedGames.Controllers
         [HttpGet("/games/{gameId}")]
         public IActionResult Details(int gameId)
         {
-            if (!isLoggedIn) {
+            if (!isLoggedIn)
+            {
                 return RedirectToAction("Index", "Home");
             }
 
@@ -103,7 +114,7 @@ namespace likedGames.Controllers
                 return RedirectToAction("Details");
             }
 
-            return View("Details", game);  
+            return View("Details", game);
         }
 
         //DELETE

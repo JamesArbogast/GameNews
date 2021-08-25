@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using GameStock.Models;
-using RestSharp;
-using RestSharp.Authenticators;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
 
@@ -41,11 +40,7 @@ namespace GameStock.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            var client = new RestClient("https://rawg-video-games-database.p.rapidapi.com/games");
-            var request = new RestRequest(Method.GET);
-            request.AddHeader("x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com");
-            request.AddHeader("x-rapidapi-key", "0f4b745fe9mshbe29f523ee718eep15fe8ajsnbb2b87bacabe");
-            IRestResponse response = client.Execute(request);
+
             return View("Index");
         }
 
@@ -75,8 +70,8 @@ namespace GameStock.Controllers
             db.SaveChanges();
 
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
-            HttpContext.Session.SetString("FirstName", newUser.FirstName);
-            return RedirectToAction("LogPage"); //do I need to pass newUser in ?
+            HttpContext.Session.SetString("UserName", newUser.UserName);
+            return RedirectToAction("Dashboard"); //do I need to pass newUser in ?
         }
 
 
