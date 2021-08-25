@@ -8,7 +8,7 @@ using GameStock.Models;
 using RestSharp;
 using RestSharp.Authenticators;
 
-namespace likedGames.Controllers
+namespace GameStock.Controllers
 {
     public class GameController : Controller
     {

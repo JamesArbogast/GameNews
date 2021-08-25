@@ -71,7 +71,7 @@ namespace GameStock.Controllers
 
             HttpContext.Session.SetInt32("UserId", newUser.UserId);
             HttpContext.Session.SetString("UserName", newUser.UserName);
-            return RedirectToAction("Dashboard"); //do I need to pass newUser in ?
+            return RedirectToAction("Dashboard", "Game"); //do I need to pass newUser in ?
         }
 
 
