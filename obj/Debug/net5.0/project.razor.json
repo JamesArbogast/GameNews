@@ -15659,18 +15659,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\EditGame.cshtml",
+      "TargetPath": "Views\\Game\\EditGame.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\_Footer.cshtml",
-      "TargetPath": "Views\\Game\\_Footer.cshtml",
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\Dashboard.cshtml",
+      "TargetPath": "Views\\Game\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\Dashboard.cshtml",
-      "TargetPath": "Views\\Game\\Dashboard.cshtml",
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\CreateGame.cshtml",
+      "TargetPath": "Views\\Game\\CreateGame.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Shared\\_Footer.cshtml",
+      "TargetPath": "Views\\Shared\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\ViewGame.cshtml",
+      "TargetPath": "Views\\Game\\ViewGame.cshtml",
       "FileKind": "mvc"
     },
     {
