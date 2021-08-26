@@ -1,14 +1,17 @@
 @model Game
 
-
-
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1 class="py-5 text-center">Edit Game</h1>
 <div class="container">
   <div class="row">
     <div class="col-6">
-      <h1>Picture will go here</h1>
+      <img class="card-img-top pr-5" src="@Model.Src" alt="@Model.Title">
     </div>
     <div class="col-6">
-      <form asp-controller="Game" asp-action="Create" method="POST" class="bg-secondary p-4">
+      <div class="border border-dark rounded-left m-3 shadow p-3 mb-2 bg-secondary rounded">
+      <form asp-controller="Game" asp-action="Create" method="POST">
         <h2 class="text-center my-3">Edit game</h2>
         <div class="form-group">
           <label asp-for="Name"></label>
@@ -58,8 +61,9 @@
           </select>
         </div>
 
-        <button class="btn btn-outline-primary">Register</button>
+        <button class="btn btn-outline-primary text-center">Register</button>
       </form>
+      </div>
     </div>
   </div>
 </div>
