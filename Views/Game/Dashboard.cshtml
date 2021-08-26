@@ -1,55 +1,40 @@
-<h1 class="text-center">Like The Game </h1>
-<div class="container pt-5">
-  <div class="card mb-3" style="max-width: 740px;">
-  <div class="row g-0">
+@model List<Game>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1 class="text-center py-4">Like The Game </h1>
+<div class="container">
+    @foreach (Game game in Model)
+      {
+  <div class="card mb-4" style="max-width: 740px;">
+  <div class="row g-0 py-3">
     <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
+      <img src="@game.Src" class="img-fluid rounded-start" alt="@game.Title">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Game title</h5>
-        <p class="card-text">CHART WILL GO HERE</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <h5 class="card-title">@game.Title</h5>
+        <p class="card-text">@game.Description</p>
+        <p class="card-text"><small class="text-muted">@game.Rating</small></p>
+        <p class="card-text"><small class="text-muted">@game.CreatedAt</small></p>
       </div>
     </div>
   </div>
 </div>
-<div class="card mb-3" style="max-width: 740px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Game title</h5>
-        <p class="card-text">CHART WILL GO HERE</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" style="max-width: 740px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Game title</h5>
-        <p class="card-text">CHART WILL GO HERE</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
+    }
+
+
 <div class="container "> 
-<div class="row pt 5">
+<div class="row pt-5">
   <div class="col-4"> 
 
     <div class="card" style="width: 18rem;">
       <img src="..." class="card-img-top" alt="...">   
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
+        <h5 class="card-title">New Games</h5>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
@@ -59,7 +44,7 @@
     <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Games 1-5 years old</h5>
       <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
@@ -70,7 +55,7 @@
     <div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">Vintage</h5>
       <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
