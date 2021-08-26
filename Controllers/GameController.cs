@@ -81,8 +81,9 @@ namespace GameStock.Controllers
                 .ToList();
 
             
-            ViewBag.reviews = db.GameReviews;
-            
+            ViewBag.reviews = db.GameReviews
+                .Include(u => u.CreatedBy);
+
             return View("Dashboard", allGames);
         }
         //READ
