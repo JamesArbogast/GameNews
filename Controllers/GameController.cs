@@ -193,7 +193,7 @@ namespace GameStock.Controllers
         }
 
         [HttpPost("/game/{gameId}/review")]
-        public IActionResult AddReview(int gameId)
+        public IActionResult AddReview(int gameId, GameReview newGameReview)
         {
             if (!isLoggedIn)
             {
@@ -205,18 +205,16 @@ namespace GameStock.Controllers
 
             if (existingGameReview == null)
             {
-                GameReview gameReview = new GameReview()
-                {
-                    GameId = gameId,
-                    UserId = (int)uid
-                };
-
-                db.GameReviews.Add(gameReview);
+                newGameReview.GameId = gameId;
+                newGameReview.UserId = (int)uid;
+                db.GameReviews.Add(newGameReview);
             }
 
             db.SaveChanges();
-            return RedirectToAction("All");
+            return RedirectToAction("Dashboard");
         }
+
+
         [HttpPost("/games/{gameId}/like")]
         public IActionResult Like(int gameId)
         {

@@ -26,7 +26,7 @@ namespace GameStock.Models
         [Display(Name = "Genre")]
         public string Genres { get; set; }
 
-        [Display(Name = "Platform")]
+        [Display(Name = "Platforms")]
         public string Platforms { get; set; }
 
         [Required(ErrorMessage = "Is required.")]
