@@ -99,6 +99,8 @@ namespace GameStock.Controllers
                 // .ThenInclude(like => like.CreatedBy)
                 .FirstOrDefault(l => l.GameId == gameId);
 
+            ViewBag.GameReviews = db.GameReviews
+                .Include(gamerev => gamerev.CreatedBy);
 
             if (game == null)
             {
