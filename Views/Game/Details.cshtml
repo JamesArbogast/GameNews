@@ -39,7 +39,25 @@
         <li>@price</li>
         } *@
     </ul>
-
+    <ul>
+      @foreach (var review in @ViewBag.GameReviews)
+      {
+        if(@Model.GameId == @review.GameId)
+        {
+          <li>
+            <div class="card-body">
+              <p>Review by @review.CreatedBy.UserName</p>
+              <p>@review.GameRating</p>
+              <p>@review.Review</p>
+            </div>
+          </li>
+        }
+        else
+        {
+          <p>No reviews found.</p>
+        }
+      }
+    </ul>
   </div>
   <div class="card-body">
   </div>
