@@ -78,6 +78,10 @@ namespace GameNews.Migrations
                     b.Property<int>("GameRating")
                         .HasColumnType("int");
 
+                    b.Property<string>("Platform")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("Review")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -150,8 +154,8 @@ namespace GameNews.Migrations
 
             modelBuilder.Entity("GameStock.Models.GameReview", b =>
                 {
-                    b.HasOne("GameStock.Models.Game", "Games")
-                        .WithMany()
+                    b.HasOne("GameStock.Models.Game", "Game")
+                        .WithMany("GameReviews")
                         .HasForeignKey("GameId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -164,7 +168,12 @@ namespace GameNews.Migrations
 
                     b.Navigation("CreatedBy");
 
-                    b.Navigation("Games");
+                    b.Navigation("Game");
+                });
+
+            modelBuilder.Entity("GameStock.Models.Game", b =>
+                {
+                    b.Navigation("GameReviews");
                 });
 
             modelBuilder.Entity("GameStock.Models.User", b =>

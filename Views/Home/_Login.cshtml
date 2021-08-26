@@ -7,14 +7,14 @@
   <div class="form-group">
     <label asp-for="LoginEmail"></label>
     <span class="text-danger font-weight-bold" asp-validation-for="LoginEmail"></span>
-    <input class="form-control" asp-for="LoginEmail" />
+    <input class="form-control" asp-for="LoginEmail" value="jtest5@gmail.com" />
   </div>
 
   <div class="form-group">
     <label asp-for="LoginPassword"></label>
     <span class="text-danger font-weight-bold" asp-validation-for="LoginPassword"></span>
     @* prefill password for testing for easy login *@
-    <input class="form-control" asp-for="LoginPassword" />
+    <input class="form-control" asp-for="LoginPassword" value="Testing123!"/>
   </div>
 
   <button class="btn btn-outline-success">Login</button>

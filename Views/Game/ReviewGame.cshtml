@@ -3,7 +3,7 @@
 <h3 class="text-center">Add a Review</h3>
 <hr />
 
-<form asp-controller="Home" asp-action="Login" method="POST">
+<form asp-controller="Game" asp-action="AddReview" method="POST">
   <div class="form-group">
     <label asp-for="GameRating"></label>
     <span class="text-danger font-weight-bold" asp-validation-for="GameRating"></span>
@@ -11,9 +11,18 @@
   </div>
 
   <div class="form-group">
-    <label asp-for="Platform"></label>
-    <span class="text-danger font-weight-bold" asp-validation-for="Platform"></span>
-    <input class="form-control" asp-for="Platform" />
+    <label asp-for="Platform">Platform</label>
+    <span asp-validation-for="Platform" class="text-danger font-weight-bold"></span>
+    <select asp-for="Platform" class="form-control">
+      <option value="PC">PC</option>
+      <option value="Playstation 5">Playstation 5</option>
+      <option value="Xbox Series X">Xbox Series X</option>
+      <option value="Nintendo Switch">Nintendo Switch</option>
+      <option value="PS">PS</option>
+      <option value="Xbox">Xbox</option>
+      <option value="Nintendo">Nintendo</option>
+      <option value="Sega">Sega</option>
+    </select>
   </div>
 
   <div class="form-group">
