@@ -28,7 +28,7 @@ namespace GameStock.Models
 
         [Display(Name = "Platform")]
         public string Platforms { get; set; }
-        
+
         [Required(ErrorMessage = "Is required.")]
         [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
         [Display(Name = "Current Rating")]
@@ -42,6 +42,6 @@ namespace GameStock.Models
         public int UserId { get; set; }
         public User CreatedBy { get; set; }
 
-        // public List<LikedGames> LikedGames { get; set; }
+        public List<GameReview> GameReviews { get; set; }
     }
 }
