@@ -21,7 +21,7 @@ namespace GameStock.Models
         public string LastName { get; set; }
 
         [Required(ErrorMessage = "Is requried.")]
-        // [AllowMultiple(false, ErrorMessage = "Username must be unique.")]
+        // [AllowMultiple = false]
         [MinLength(4, ErrorMessage = "Must be at least 4 characters.")]
         [Display(Name = "Username")]
         public string UserName { get; set; }

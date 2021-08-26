@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameNews.Migrations
 {
     [DbContext(typeof(GameStockContext))]
-    [Migration("20210825211906_updateModel")]
-    partial class updateModel
+    [Migration("20210826031329_updatedGames")]
+    partial class updatedGames
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,7 +34,12 @@ namespace GameNews.Migrations
                     b.Property<int>("CurrentRating")
                         .HasColumnType("int");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("Genres")
+                        .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("ImgUrl")
@@ -47,17 +52,11 @@ namespace GameNews.Migrations
                     b.Property<string>("Platforms")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("Prices")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Vendors")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.HasKey("GameId");
 
@@ -98,33 +97,6 @@ namespace GameNews.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("GameReviews");
-                });
-
-            modelBuilder.Entity("GameStock.Models.LikedGames", b =>
-                {
-                    b.Property<int>("LikedId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("GameId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("LikedId");
-
-                    b.HasIndex("GameId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("LikedGames");
                 });
 
             modelBuilder.Entity("GameStock.Models.User", b =>
@@ -195,30 +167,6 @@ namespace GameNews.Migrations
                     b.Navigation("CreatedBy");
 
                     b.Navigation("Games");
-                });
-
-            modelBuilder.Entity("GameStock.Models.LikedGames", b =>
-                {
-                    b.HasOne("GameStock.Models.Game", "Games")
-                        .WithMany("LikedGames")
-                        .HasForeignKey("GameId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GameStock.Models.User", "CreatedBy")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("CreatedBy");
-
-                    b.Navigation("Games");
-                });
-
-            modelBuilder.Entity("GameStock.Models.Game", b =>
-                {
-                    b.Navigation("LikedGames");
                 });
 
             modelBuilder.Entity("GameStock.Models.User", b =>

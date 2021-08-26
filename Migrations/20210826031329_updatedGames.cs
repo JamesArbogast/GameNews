@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GameNews.Migrations
 {
-    public partial class updateModel : Migration
+    public partial class updatedGames : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -36,10 +36,9 @@ namespace GameNews.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     ImgUrl = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    Genres = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
+                    Description = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
+                    Genres = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     Platforms = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
-                    Prices = table.Column<int>(type: "int", nullable: false),
-                    Vendors = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
                     CurrentRating = table.Column<int>(type: "int", nullable: false),
                     Creator = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
@@ -87,34 +86,6 @@ namespace GameNews.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "LikedGames",
-                columns: table => new
-                {
-                    LikedId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    GameId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_LikedGames", x => x.LikedId);
-                    table.ForeignKey(
-                        name: "FK_LikedGames_Games_GameId",
-                        column: x => x.GameId,
-                        principalTable: "Games",
-                        principalColumn: "GameId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_LikedGames_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_GameReviews_GameId",
                 table: "GameReviews",
@@ -129,25 +100,12 @@ namespace GameNews.Migrations
                 name: "IX_Games_UserId",
                 table: "Games",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_LikedGames_GameId",
-                table: "LikedGames",
-                column: "GameId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_LikedGames_UserId",
-                table: "LikedGames",
-                column: "UserId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "GameReviews");
-
-            migrationBuilder.DropTable(
-                name: "LikedGames");
 
             migrationBuilder.DropTable(
                 name: "Games");

@@ -4,27 +4,27 @@
   int? uid = Context.Session.GetInt32("UserId");
   } *@
 
-  
+
 
 
 <div class="card mt-5 p-3" style="width: 48rem;">
-  <img class="card-img-top" src="@Model.Src" alt="Post">
+  <img class="card-img-top" src="@Model.ImgUrl" alt="Post">
   <div class="card-body">
-    <h5 class="card-title">@Model.Title</h5>
+    <h5 class="card-title">@Model.Name</h5>
     <p class="card-text">@Model.Description</p>
     @if (Model.UserId == Context.Session.GetInt32("UserId"))
-  {
-    <div class="row justify-content-center p-3">
-      @* Hide edit & delete if not the author *@
-      <form asp-controller="Game" asp-action="Delete" asp-route-postId="@Model.GameId" method="POST">
-        <button class="btn btn-outline-danger btn-sm">Delete</button>
-      </form>
+    {
+      <div class="row justify-content-center p-3">
+        @* Hide edit & delete if not the author *@
+        <form asp-controller="Game" asp-action="Delete" asp-route-postId="@Model.GameId" method="POST">
+          <button class="btn btn-outline-danger btn-sm">Delete</button>
+        </form>
 
-      <a asp-controller="Game" asp-action="Edit" asp-route-postId="@Model.GameId"
-      class="btn btn-sm btn-outline-warning ml-2">
-        Edit
-      </a>
-    </div>
-  }
+        <a asp-controller="Game" asp-action="Edit" asp-route-postId="@Model.GameId"
+        class="btn btn-sm btn-outline-warning ml-2">
+          Edit
+        </a>
+      </div>
+    }
   </div>
 </div>

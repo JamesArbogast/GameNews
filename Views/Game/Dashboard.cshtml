@@ -1,67 +1,67 @@
 @model List<Game>
 
 @{
-    ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "Home Page";
 }
 
 
 <h1 class="text-center py-4">Like The Game </h1>
 <div class="container">
-    @foreach (Game game in Model)
-      {
-  <div class="card mb-4" style="max-width: 740px;">
-  <div class="row g-0 py-3">
-    <div class="col-md-4">
-      <img src="@game.Src" class="img-fluid rounded-start" alt="@game.Title">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">@game.Title</h5>
-        <p class="card-text">@game.Description</p>
-        <p class="card-text"><small class="text-muted">@game.Rating</small></p>
-        <p class="card-text"><small class="text-muted">@game.CreatedAt</small></p>
+  @foreach (Game game in Model)
+  {
+    <div class="card mb-4" style="max-width: 740px;">
+      <div class="row g-0 py-3">
+        <div class="col-md-4">
+          <img src="@game.ImgUrl" class="img-fluid rounded-start" alt="@game.Name">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">@game.Name</h5>
+            <p class="card-text">@game.Description</p>
+            <p class="card-text"><small class="text-muted">@game.CurrentRating</small></p>
+            <p class="card-text"><small class="text-muted">@game.CreatedAt</small></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-    }
+  }
 
 
-<div class="container "> 
-<div class="row pt-5">
-  <div class="col-4"> 
+  <div class="container ">
+    <div class="row pt-5">
+      <div class="col-4">
 
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">   
-      <div class="card-body">
-        <h5 class="card-title">New Games</h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">New Games</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
 
-    <div class="col-4"> 
-    <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-      <h5 class="card-title">Games 1-5 years old</h5>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Games 1-5 years old</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
 
 
-    <div class="col-4"> 
-    <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-      <h5 class="card-title">Vintage</h5>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Vintage</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
 
-  </div>
+    </div>
   </div>
 </div>
 </div>
