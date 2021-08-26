@@ -27,12 +27,13 @@ namespace GameStock
             services.AddDbContext<GameStockContext>(options => options.UseMySql(
                     Configuration["DBInfo:ConnectionString"],
                     ServerVersion.FromString("8.0.23-mysql")));
-
+        
             // to access session directly from view, corresponds with: @using Microsoft.AspNetCore.Http in Views/_ViewImports.cshtml
             services.AddHttpContextAccessor();
             services.AddSession();
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
+
 
 
 
@@ -47,7 +48,7 @@ namespace GameStock
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+        
             // css, js, and image files can now be added to wwwroot folder
             app.UseStaticFiles();
             app.UseSession();
@@ -58,5 +59,6 @@ namespace GameStock
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+
     }
 }

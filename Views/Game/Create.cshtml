@@ -5,18 +5,36 @@
 
 
 <div class="container">
-  <div class="row">
-    <div class="col-6">
-      <h1>Picture will go here</h1>
-    </div>
-    <div class="col-6">
-      <form asp-controller="Game" asp-action="Create" method="POST" class="bg-primary p-4">
-        <h2 class="text-center my-3">Create a game</h2>
-        <div class="form-group">
-          <label asp-for="Name"></label>
-          <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
-          <input asp-for="Name" class="form-control" />
-        </div>
+<div class="row">
+<div class="col-6">
+  <h1>Picture will go here</h1>
+</div>
+<div class="col-6">
+<form asp-controller="Game" asp-action="Create" method="POST" class="bg-primary p-4">
+<h2 class="text-center my-3">Create a game</h2>
+  <div class="form-group">
+    <label asp-for="Name"></label>
+    <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+    <input asp-for="Name" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="CurrentRating">Current Rating</label>
+    <span asp-validation-for="CurrentRating" class="text-danger font-weight-bold"></span>
+    <input asp-for="CurrentRating" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="ImgUrl">Image URL</label>
+    <span asp-validation-for="ImgUrl" class="text-danger font-weight-bold"></span>
+    <input asp-for="ImgUrl" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Creator"></label>
+    <span asp-validation-for="Creator" class="text-danger font-weight-bold"></span>
+    <input asp-for="Creator" class="form-control" />
+  </div>
 
         <div class="form-group">
           <label asp-for="CurrentRating"></label>

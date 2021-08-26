@@ -15674,11 +15674,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\CreateGame.cshtml",
-      "TargetPath": "Views\\Game\\CreateGame.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Shared\\_Footer.cshtml",
       "TargetPath": "Views\\Shared\\_Footer.cshtml",
       "FileKind": "mvc"
@@ -15686,6 +15681,11 @@
     {
       "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\ViewGame.cshtml",
       "TargetPath": "Views\\Game\\ViewGame.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\ReviewGame.cshtml",
+      "TargetPath": "Views\\Game\\ReviewGame.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -40,7 +40,7 @@ namespace GameStock.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            return View("New");
+            return View("Create");
         }
         //Create() talks to form asp-action make sure its the same
         [HttpPost("/games/create")]
@@ -51,7 +51,7 @@ namespace GameStock.Controllers
             if (ModelState.IsValid == false)
             {
                 // Go back to the form so error messages are displayed.
-                return View("New");
+                return View("Create");
             }
 
             // if (newGame.Date <= DateTime.Now)
