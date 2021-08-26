@@ -17,7 +17,7 @@ namespace GameStock.Models
         public string Name { get; set; }
         public string ImgUrl { get; set; }
 
-        public string Genres { get; set; }
+        public List<string> Genres { get; set; }
         public string Platforms { get; set; }
         public int Prices { get; set; }
         public string Vendors { get; set; }
