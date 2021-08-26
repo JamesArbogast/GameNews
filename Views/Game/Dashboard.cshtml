@@ -12,11 +12,11 @@
     <div class="card mb-4" style="max-width: 740px;">
       <div class="row g-0 py-3">
         <div class="col-md-4">
-          <img src="@game.ImgUrl" class="img-fluid rounded-start" alt="@game.Name">
+          <img src="@game.ImgUrl" class="img-fluid rounded-start ml-3" alt="@game.Name">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">@game.Name</h5>
+            <p class="card-title h6"><a asp-controller="Game" asp-action="Details" asp-route-gameId="@game.GameId">@game.Name </a></p>
             <p class="card-text">@game.Description</p>
             <p class="card-text"><small class="text-muted">@game.CurrentRating</small></p>
             <p class="card-text"><small class="text-muted">@game.CreatedAt</small></p>

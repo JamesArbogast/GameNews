@@ -1,16 +1,17 @@
 @model Game
 
-<h3 class="text-center">Add Game to Game Base</h3>
+<h1 class="text-center py-4">Add Game to Game Base</h1>
 <hr />
 
 
 <div class="container">
 <div class="row">
 <div class="col-6">
-  <h1>Picture will go here</h1>
+  <h1>Please add pic</h1>
 </div>
 <div class="col-6">
-<form asp-controller="Game" asp-action="Create" method="POST" class="bg-primary p-4">
+<div class="border border-dark rounded-left m-3 shadow p-3 mb-2 bg-primary rounded">
+<form asp-controller="Game" asp-action="Create" method="POST">
 <h2 class="text-center my-3">Create a game</h2>
   <div class="form-group">
     <label asp-for="Name"></label>
@@ -74,6 +75,7 @@
 
         <button class="btn btn-success">Register</button>
       </form>
+      </div>
     </div>
   </div>
 </div>
