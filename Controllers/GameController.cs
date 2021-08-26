@@ -79,6 +79,10 @@ namespace GameStock.Controllers
             List<Game> allGames = db.Games // hover over the param to see it's data type
                                            // .Include(game => game.LikedGames)
                 .ToList();
+
+            
+            ViewBag.reviews = db.GameReviews;
+            
             return View("Dashboard", allGames);
         }
         //READ
