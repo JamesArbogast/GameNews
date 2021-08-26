@@ -54,15 +54,6 @@ namespace GameStock.Controllers
                 return View("Create");
             }
 
-            // if (newGame.Date <= DateTime.Now)
-            // {
-            //     ModelState.AddModelError("Date", "must be in the future.");
-            //     return View("New");
-            // }
-
-            // If any above custom errors were added, ModelState would now be invalid.
-
-            // HttpContext.Session.SetString("NameOne", newWedding.NameOne);
             newGame.UserId = (int)uid;
             db.Games.Add(newGame);
             db.SaveChanges();
