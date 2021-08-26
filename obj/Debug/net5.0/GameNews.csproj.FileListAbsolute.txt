@@ -170,3 +170,11 @@ E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.pdb
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.genruntimeconfig.cache
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Razor\Views\Game\ReviewGame.cshtml.g.cs
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\Razor\Views\Game\ReviewGame.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Game\Create.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Game\Details.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Game\EditGame.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Game\ReviewGame.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Game\ViewGame.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\RestSharp.dll
