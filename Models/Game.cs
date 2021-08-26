@@ -26,11 +26,14 @@ namespace GameStock.Models
         [Display(Name = "Genre")]
         public string Genres { get; set; }
 
-        [Display(Name = "Platform")]
+        [Display(Name = "Platforms")]
         public string Platforms { get; set; }
 
         [Required(ErrorMessage = "Is required.")]
+<<<<<<< HEAD
+=======
         // [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
+>>>>>>> daed8c120946f5ae6c66fca200f4e64a5406d1e3
         [Display(Name = "Current Rating")]
         public int CurrentRating { get; set; }
         [Display(Name = "Creator")]
@@ -42,6 +45,6 @@ namespace GameStock.Models
         public int UserId { get; set; }
         public User CreatedBy { get; set; }
 
-        // public List<LikedGames> LikedGames { get; set; }
+        public List<GameReview> GameReviews { get; set; }
     }
 }

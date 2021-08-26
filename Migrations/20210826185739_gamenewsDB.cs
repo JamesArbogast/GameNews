@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GameNews.Migrations
 {
-    public partial class updatedGames : Migration
+    public partial class gamenewsDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -62,8 +62,9 @@ namespace GameNews.Migrations
                 {
                     ReviewId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Review = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     GameRating = table.Column<int>(type: "int", nullable: false),
+                    Review = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
+                    Platform = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
