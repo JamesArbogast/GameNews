@@ -30,7 +30,6 @@ namespace GameStock.Models
         public string Platforms { get; set; }
 
         [Required(ErrorMessage = "Is required.")]
-        [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
         [Display(Name = "Current Rating")]
         public int CurrentRating { get; set; }
         [Display(Name = "Creator")]

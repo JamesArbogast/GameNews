@@ -181,8 +181,42 @@ namespace GameStock.Controllers
             return RedirectToAction("Details", new { gameId = gameId });
         }
 
+        [HttpGet("/gamereview/{gameId}/new")]
+        public IActionResult Review()
+        {
+            if (!isLoggedIn)
+            {
+                return RedirectToAction("Index", "Home");
+            }
 
+            return View("ReviewGame");
+        }
 
+        [HttpPost("/game/{gameId}/review")]
+        public IActionResult AddReview(int gameId)
+        {
+            if (!isLoggedIn)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            GameReview existingGameReview = db.GameReviews
+                .FirstOrDefault(r => r.UserId == (int)uid && r.GameId == gameId);
+
+            if (existingGameReview == null)
+            {
+                GameReview gameReview = new GameReview()
+                {
+                    GameId = gameId,
+                    UserId = (int)uid
+                };
+
+                db.GameReviews.Add(gameReview);
+            }
+
+            db.SaveChanges();
+            return RedirectToAction("All");
+        }
         [HttpPost("/games/{gameId}/like")]
         public IActionResult Like(int gameId)
         {
