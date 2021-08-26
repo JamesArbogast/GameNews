@@ -106,7 +106,6 @@ C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Ga
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\ref\GameNews.dll
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\GameNews.pdb
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\GameNews.genruntimeconfig.cache
-C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Razor\Views\Game\CreateGame.cshtml.g.cs
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Razor\Views\Game\EditGame.cshtml.g.cs
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Razor\Views\Game\ViewGame.cshtml.g.cs
 C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
@@ -169,3 +168,4 @@ E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.dll
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\ref\GameNews.dll
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.pdb
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.genruntimeconfig.cache
+C:\Users\james\OneDrive\Desktop\coding_dojo\CSharp\GameStock\obj\Debug\net5.0\Razor\Views\Game\ReviewGame.cshtml.g.cs

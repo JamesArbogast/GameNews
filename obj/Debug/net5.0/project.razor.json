@@ -15684,6 +15684,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\Game\\ReviewGame.cshtml",
+      "TargetPath": "Views\\Game\\ReviewGame.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using GameStock.Models;
 
 namespace GameStock.Models
 {
@@ -17,9 +16,6 @@ namespace GameStock.Models
         public string Name { get; set; }
         public string ImgUrl { get; set; }
 
-<<<<<<< HEAD
-        public List<string> Genres { get; set; }
-=======
         [Required(ErrorMessage = "Is required.")]
         [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
         [Display(Name = "Description")]
@@ -31,7 +27,6 @@ namespace GameStock.Models
         public string Genres { get; set; }
 
         [Display(Name = "Platform")]
->>>>>>> ffe6352b698d3e90acc6d6115caa9d09a7287149
         public string Platforms { get; set; }
 
 

@@ -1,0 +1,26 @@
+@model GameReview
+
+<h3 class="text-center">Add a Review</h3>
+<hr />
+
+<form asp-controller="Home" asp-action="Login" method="POST">
+  <div class="form-group">
+    <label asp-for="GameRating"></label>
+    <span class="text-danger font-weight-bold" asp-validation-for="GameRating"></span>
+    <input class="form-control" asp-for="GameRating" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Platform"></label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Platform"></span>
+    <input class="form-control" asp-for="Platform" />
+  </div>
+
+  <div class="form-group">
+    <label asp-for="Review"></label>
+    <span class="text-danger font-weight-bold" asp-validation-for="Review"></span>
+    <input class="form-control" asp-for="Review" />
+  </div>
+
+  <button class="btn btn-outline-success">Add Review</button>
+</form>
