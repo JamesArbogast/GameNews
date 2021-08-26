@@ -10,72 +10,58 @@
       <h1>Picture will go here</h1>
     </div>
     <div class="col-6">
-<form asp-controller="Game" asp-action="Create" method="POST" class="bg-secondary p-4">
-<h2 class="text-center my-3">Edit game</h2>
-  <div class="form-group">
-    <label asp-for="Name"></label>
-    <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
-    <input asp-for="Name" class="form-control" value="@Model.Name" />
-  </div>
+      <form asp-controller="Game" asp-action="Create" method="POST" class="bg-secondary p-4">
+        <h2 class="text-center my-3">Edit game</h2>
+        <div class="form-group">
+          <label asp-for="Name"></label>
+          <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+          <input asp-for="Name" class="form-control" value="@Model.Name" />
+        </div>
 
-  <div class="form-group">
-    <label asp-for="CurrentRating"></label>
-    <span asp-validation-for="CurrentRating" class="text-danger font-weight-bold"></span>
-    <input asp-for="CurrentRating" class="form-control" value="@Model.CurrentRating" />
-  </div>
+        <div class="form-group">
+          <label asp-for="CurrentRating"></label>
+          <span asp-validation-for="CurrentRating" class="text-danger font-weight-bold"></span>
+          <input asp-for="CurrentRating" class="form-control" value="@Model.CurrentRating" />
+        </div>
 
-  <div class="form-group">
-    <label asp-for="Creator"></label>
-    <span asp-validation-for="Creator" class="text-danger font-weight-bold"></span>
-    <input asp-for="Creator" class="form-control" value="@Model.Creator"/>
-  </div>
+        <div class="form-group">
+          <label asp-for="Creator"></label>
+          <span asp-validation-for="Creator" class="text-danger font-weight-bold"></span>
+          <input asp-for="Creator" class="form-control" value="@Model.Creator" />
+        </div>
 
-  <div class="form-group">
-    <label asp-for="Genres"></label>
-    <span asp-validation-for="Genres" class="text-danger font-weight-bold"></span>
-    <select asp-for="Genres" class="form-control" value="@Model.Genres">
-      <option value="FPS">FPS</option>
-      <option value="Puzzle">Puzzle</option>
-      <option value="RTS">RTS</option>
-      <option value="RPG">RPG</option>
-      <option value="Metroidvania">Metroidvania</option>
-      <option value="Action">Action</option>
-      <option value="Sports">Sports</option>
-      <option value="Simulation">Simulation</option>
-    </select>
-  </div>
+        <div class="form-group">
+          <label asp-for="Genres"></label>
+          <span asp-validation-for="Genres" class="text-danger font-weight-bold"></span>
+          <select asp-for="Genres" class="form-control" value="@Model.Genres">
+            <option value="FPS">FPS</option>
+            <option value="Puzzle">Puzzle</option>
+            <option value="RTS">RTS</option>
+            <option value="RPG">RPG</option>
+            <option value="Metroidvania">Metroidvania</option>
+            <option value="Action">Action</option>
+            <option value="Sports">Sports</option>
+            <option value="Simulation">Simulation</option>
+          </select>
+        </div>
 
-  <div class="form-group">
-    <label asp-for="Platforms"></label>
-    <span asp-validation-for="Platforms" class="text-danger font-weight-bold"></span>
-    <select asp-for="Platforms" class="form-control" value="@Model.Platforms">
-      <option value="PC">PC</option>
-      <option value="Playstation 5">Playstation 5</option>
-      <option value="Xbox Series X">Xbox Series X</option>
-      <option value="Nintendo Switch">Nintendo Switch</option>
-      <option value="PS">PS</option>
-      <option value="Xbox">Xbox</option>
-      <option value="Nintendo">Nintendo</option>
-      <option value="Sega">Sega</option>
-    </select>
-  </div>
+        <div class="form-group">
+          <label asp-for="Platforms"></label>
+          <span asp-validation-for="Platforms" class="text-danger font-weight-bold"></span>
+          <select asp-for="Platforms" class="form-control" value="@Model.Platforms">
+            <option value="PC">PC</option>
+            <option value="Playstation 5">Playstation 5</option>
+            <option value="Xbox Series X">Xbox Series X</option>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+            <option value="PS">PS</option>
+            <option value="Xbox">Xbox</option>
+            <option value="Nintendo">Nintendo</option>
+            <option value="Sega">Sega</option>
+          </select>
+        </div>
 
-  <div class="form-group">
-    <label asp-for="Prices"></label>
-    <span asp-validation-for="Prices" class="text-danger font-weight-bold"></span>
-    <input asp-for="Prices" class="form-control" value="@Model.Prices">
-    </select>
-  </div>
-
-  <div class="form-group">
-    <label asp-for="Vendors"></label>
-    <span asp-validation-for="Vendors" class="text-danger font-weight-bold"></span>
-    <input asp-for="Vendors" class="form-control" value="@Model.Vendors">
-    </select>
-  </div>
-
-  <button class="btn btn-outline-primary">Register</button>
-</form>
-</div>
+        <button class="btn btn-outline-primary">Register</button>
+      </form>
+    </div>
   </div>
 </div>

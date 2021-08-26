@@ -83,10 +83,10 @@ namespace GameStock.Controllers
             request.AddHeader("x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com");
             request.AddHeader("x-rapidapi-key", "0f4b745fe9mshbe29f523ee718eep15fe8ajsnbb2b87bacabe");
             IRestResponse response = client.Execute(request);
-            Console.WriteLine(response);
+            Console.WriteLine(client);
 
             List<Game> allGames = db.Games // hover over the param to see it's data type
-                .Include(game => game.LikedGames)
+                                           // .Include(game => game.LikedGames)
                 .ToList();
             return View("Dashboard", allGames);
         }
@@ -102,10 +102,10 @@ namespace GameStock.Controllers
 
             Game game = db.Games
                 .Include(game => game.CreatedBy)
-                .Include(game => game.LikedGames)
+                // .Include(game => game.LikedGames)
                 // Include something from the last thing that was included.
                 // Include the User from the likes (hover over like param to see data type)
-                .ThenInclude(like => like.CreatedBy)
+                // .ThenInclude(like => like.CreatedBy)
                 .FirstOrDefault(l => l.GameId == gameId);
 
 
@@ -172,8 +172,8 @@ namespace GameStock.Controllers
             dbGame.Name = editedGame.Name;
             dbGame.Genres = editedGame.Genres;
             dbGame.Platforms = editedGame.Platforms;
-            dbGame.Prices = editedGame.Prices;
-            dbGame.Vendors = editedGame.Vendors;
+            // dbGame.Prices = editedGame.Prices;
+            // dbGame.Vendors = editedGame.Vendors;
             dbGame.Genres = editedGame.Genres;
             dbGame.CurrentRating = editedGame.CurrentRating;
             dbGame.ImgUrl = editedGame.ImgUrl;

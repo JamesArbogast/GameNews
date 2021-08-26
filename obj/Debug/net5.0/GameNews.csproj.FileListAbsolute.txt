@@ -147,7 +147,6 @@ E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.TagHelpers.input.cache
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.TagHelpers.output.cache
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\GameNews.RazorCoreGenerate.cache
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\Razor\Views\Game\Create.cshtml.g.cs
-E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\Razor\Views\Game\CreateGame.cshtml.g.cs
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\Razor\Views\Game\Dashboard.cshtml.g.cs
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\Razor\Views\Game\Details.cshtml.g.cs
 E:\Coding Dojo\C#\Asp\GameNews\obj\Debug\net5.0\Razor\Views\Game\EditGame.cshtml.g.cs

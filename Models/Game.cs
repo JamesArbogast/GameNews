@@ -17,11 +17,29 @@ namespace GameStock.Models
         public string Name { get; set; }
         public string ImgUrl { get; set; }
 
+<<<<<<< HEAD
         public List<string> Genres { get; set; }
+=======
+        [Required(ErrorMessage = "Is required.")]
+        [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
+        [Display(Name = "Description")]
+        public string Description { get; set; }
+
+        [Required(ErrorMessage = "Is required.")]
+        [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
+        [Display(Name = "Genre")]
+        public string Genres { get; set; }
+
+        [Display(Name = "Platform")]
+>>>>>>> ffe6352b698d3e90acc6d6115caa9d09a7287149
         public string Platforms { get; set; }
-        public int Prices { get; set; }
-        public string Vendors { get; set; }
+
+
+        [Required(ErrorMessage = "Is required.")]
+        [MinLength(2, ErrorMessage = "Must be at least 2 characters.")]
+        [Display(Name = "Current Rating")]
         public int CurrentRating { get; set; }
+        [Display(Name = "Creator")]
         public string Creator { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
@@ -30,6 +48,6 @@ namespace GameStock.Models
         public int UserId { get; set; }
         public User CreatedBy { get; set; }
 
-        public List<LikedGames> LikedGames { get; set; }
+        // public List<LikedGames> LikedGames { get; set; }
     }
 }
