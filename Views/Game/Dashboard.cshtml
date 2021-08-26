@@ -34,22 +34,28 @@
 
 </div>
 <div class="col-4">
-  @foreach (var review in @ViewBag.reviews)
+  @if(@ViewBag.reviews != null)
   {
-    <div class="card text-center my-2">
-      <div class="card-header">
-        Review
+    @foreach (var review in @ViewBag.reviews)
+    {
+      <div class="card text-center my-2">
+        <div class="card-header">
+          Review
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">@review.Game.Name</h5>
+          <p class="card-text">@review.GameRating</p>
+          <p class="card-text">@review.Review</p>
+          <a href="/games/@review.GameId" class="btn btn-primary">See Review</a>
+        </div>
+        <div class="card-footer text-muted">
+          @review.CreatedAt by @review.CreatedBy.UserName
+        </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title">@review.Game.Name</h5>
-        <p class="card-text">@review.GameRating</p>
-        <p class="card-text">@review.Review</p>
-        <a href="/games/@review.GameId" class="btn btn-primary">See Review</a>
-      </div>
-      <div class="card-footer text-muted">
-        @review.CreatedAt
-      </div>
-    </div>
+    }
+  }
+  else {
+    <p>No reviews.</p>
   }
   <div class="card text-center my-2">
   <div class="card-header">
