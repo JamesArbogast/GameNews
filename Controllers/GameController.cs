@@ -31,13 +31,20 @@ namespace GameStock.Controllers
                 return uid != null;
             }
         }
+
+        [HttpGet("")]
+        public IActionResult Index()
+        {
+            return RedirectToAction("Dashboard");
+        }
+
         //CREATE
         [HttpGet("/games/new")]
         public IActionResult New()
         {
             if (!isLoggedIn)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("LogPage", "Home");
             }
 
             return View("Create");
@@ -46,7 +53,6 @@ namespace GameStock.Controllers
         [HttpPost("/games/create")]
         public IActionResult Create(Game newGame)
         {
-
             // Every time a form is submitted, check the validations.
             if (ModelState.IsValid == false)
             {
@@ -64,11 +70,6 @@ namespace GameStock.Controllers
         [HttpGet("/Dashboard")]
         public IActionResult Dashboard()
         {
-            if (!isLoggedIn)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-
             var client = new RestClient("https://rawg-video-games-database.p.rapidapi.com/games");
             var request = new RestRequest(Method.GET);
             request.AddHeader("x-rapidapi-host", "rawg-video-games-database.p.rapidapi.com");

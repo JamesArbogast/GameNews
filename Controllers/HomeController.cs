@@ -37,13 +37,6 @@ namespace GameStock.Controllers
             }
         }
 
-        [HttpGet("")]
-        public IActionResult Index()
-        {
-
-            return View("Index");
-        }
-
         [HttpPost("/register")]
         public IActionResult Register(User newUser)
         {
@@ -78,7 +71,7 @@ namespace GameStock.Controllers
         [HttpGet("/login")]
         public IActionResult LogPage()
         {
-            return View();
+            return View("Index");
         }
 
         [HttpPost("/login")]
