@@ -13,12 +13,13 @@
         <footer class="blockquote-footer"><cite title="Source Title">@Model.Name, @Model.Creator | @Model.Genres | @Model.Platforms </cite></footer>
       </blockquote>
     </div>
-            <h1 class="mr-5">
-              @Model.CurrentRating
-            </h1>
-          </div>
-
+      </div>
         <div>
+    <div>            
+      <h1 class="mr-5">
+        Average Score: @ViewBag.AvgScore
+      </h1>
+    </div>
         </div>
       </div>
     <div>
@@ -39,12 +40,17 @@
 </div>
 <hr>
 <div class="w-75">
-  <div class="ml-2">
-      @if(@ViewBag.GameReviews != null)
+<div class="ml-2">
+    @{
+      int length = 0;
+      int score = 0;
+      if(@ViewBag.GameReviews != null)
       {
         @foreach (var review in @ViewBag.GameReviews)
         {
-          @if(@Model.GameId == @review.GameId)
+          length++;
+          score += review.GameRating;
+          if(@Model.GameId == @review.GameId)
           {
             <div>
               <div class="card-body">
@@ -58,12 +64,10 @@
               </div>
             </div>
           }
-          else
-          {
-          <h5 class="font-italic">Be the first to Review @Model.Name by <a href="#">clicking here!</a></h5>
-          }
         }
+        float averageScore = score / length;
       }
-
+      <h5 class="font-italic">Leave a review by <a href="/games/@Model.GameId">clicking here!</a></h5>
+    }
   </div>
 </div>

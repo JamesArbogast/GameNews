@@ -44,7 +44,25 @@
               overflow: hidden;"
               >@game.Description</p>
               <hr>
-            <p class="card-text m-0">Current Rating: @game.CurrentRating</p>
+              <p class="card-text">Current Rating: @{
+                double length = 0;
+                double score = 0;
+                @if(game.GameReviews != null) 
+                {
+                  @foreach (var review in game.GameReviews)
+                  {
+                      length ++;
+                      score += review.GameRating;
+                  }
+                  double average = Math.Round((score/length), 2);
+                  <p>@average</p>
+                }
+                else
+                {
+                  <p>Not enough reviews.</p>
+                }
+              }
+            </p>
             <p class="card-text m-0"><small class="text-muted">Submitted: @game.CreatedAt</small></p>
           </div>
         </div>
