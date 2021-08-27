@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GameNews.Migrations
 {
-    public partial class First : Migration
+    public partial class whatever : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

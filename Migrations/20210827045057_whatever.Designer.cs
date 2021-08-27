@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameNews.Migrations
 {
     [DbContext(typeof(GameStockContext))]
-    [Migration("20210827010017_First")]
-    partial class First
+    [Migration("20210827045057_whatever")]
+    partial class whatever
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

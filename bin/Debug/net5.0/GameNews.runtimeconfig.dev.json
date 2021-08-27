@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/javanogden/.dotnet/store/|arch|/|tfm|",
-      "/Users/javanogden/.nuget/packages"
+      "C:\\Users\\Zirkander\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Zirkander\\.nuget\\packages"
     ]
   }
 }

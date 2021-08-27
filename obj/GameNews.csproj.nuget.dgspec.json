@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/javanogden/Desktop/GameNews/GameNews/GameNews.csproj": {}
+    "E:\\Coding Dojo\\C#\\Asp\\GameNews\\GameNews.csproj": {}
   },
   "projects": {
-    "/Users/javanogden/Desktop/GameNews/GameNews/GameNews.csproj": {
+    "E:\\Coding Dojo\\C#\\Asp\\GameNews\\GameNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/javanogden/Desktop/GameNews/GameNews/GameNews.csproj",
+        "projectUniqueName": "E:\\Coding Dojo\\C#\\Asp\\GameNews\\GameNews.csproj",
         "projectName": "GameNews",
-        "projectPath": "/Users/javanogden/Desktop/GameNews/GameNews/GameNews.csproj",
-        "packagesPath": "/Users/javanogden/.nuget/packages/",
-        "outputPath": "/Users/javanogden/Desktop/GameNews/GameNews/obj/",
+        "projectPath": "E:\\Coding Dojo\\C#\\Asp\\GameNews\\GameNews.csproj",
+        "packagesPath": "C:\\Users\\Zirkander\\.nuget\\packages\\",
+        "outputPath": "E:\\Coding Dojo\\C#\\Asp\\GameNews\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/javanogden/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Zirkander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
