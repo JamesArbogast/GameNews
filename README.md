@@ -1,5 +1,5 @@
 # [GameNews / Game Review]
-### About this site
+### About This Site
 As gamers, we often look for fun new games to play. However, we've noticed that, while game reviews are helpful, they can be outdated and about different content releases. The reason we built our site is to have a more robust reviewing system that will allow users to create game reviews that are sorted by content release, whether it be major content releases, season changes or anything that changes the gameplay. This allows us to map the trajectory of the game as more content is release and helps gamers to pick games based on their current build.
 
 ## Current Build
