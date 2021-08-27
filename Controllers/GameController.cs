@@ -76,8 +76,8 @@ namespace GameStock.Controllers
             IRestResponse response = client.Execute(request);
             Console.WriteLine(client);
 
-            List<Game> allGames = db.Games // hover over the param to see it's data type
-                                           // .Include(game => game.LikedGames)
+            List<Game> allGames = db.Games
+                .Include(r => r.GameReviews)
                 .ToList();
 
             
