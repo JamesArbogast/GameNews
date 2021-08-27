@@ -1,63 +1,29 @@
 @model Game
 
 <div class="text-left w-100 ml-5">
-  <h1 class="display-3 font-italic">@Model.Platforms: @Model.Name</h1>
+  <h1 class="display-4 font-italic">@Model.Platforms: @Model.Name</h1>
   <p>Created by: <em>@Model.Creator</em></p>
   <hr>
   <div class="d-flex align-items-center justify-content-between p-3 shadow rounded">
-      <img class="w-25 h-50 ml-5 mr-5" src="@Model.ImgUrl" />
-    <div class="w-75 text-left ml-5 ">
-    <div>@Model.CurrentRating:</div>
+      <img class="w-25 h-50 ml-5 mr-3" src="@Model.ImgUrl" />
+        <div class="w-75 text-left">
+          <div class="d-flex justify-content-between align-items-center align-top">
     <div>
-      <h3>Genres</h3>
-      <ul>
-        @* @foreach(string genre in @Model.Genres)
-          {
-          <li>@genre</li>
-          } *@
-      </ul>
+      <blockquote class="blockquote">
+        <footer class="blockquote-footer"><cite title="Source Title">@Model.Name, @Model.Creator | @Model.Genres | @Model.Platforms </cite></footer>
+      </blockquote>
     </div>
+            <h1 class="mr-5">
+              @Model.CurrentRating
+            </h1>
+          </div>
+
+        <div>
+        </div>
+      </div>
     <div>
-      <h3>Platforms</h3>
-      <ul>
-        @* @foreach(string platform in @Model.Platforms)
-          {
-          <li>@platform</li>
-          } *@
-      </ul>
+
     </div>
-    <h3>Vendors and Prices</h3>
-    <ul>
-      @* @foreach (string vendor in @Model.Vendors)
-        {
-        <li>@vendor</li>
-        } *@
-    </ul>
-    <ul>
-      @* @foreach (int price in @Model.Prices)
-        {
-        <li>@price</li>
-        } *@
-    </ul>
-    <ul>
-      @foreach (var review in @ViewBag.GameReviews)
-      {
-        if(@Model.GameId == @review.GameId)
-        {
-          <li>
-            <div class="card-body">
-              <p>Review by @review.CreatedBy.UserName</p>
-              <p>@review.GameRating</p>
-              <p>@review.Review</p>
-            </div>
-          </li>
-        }
-        else
-        {
-          <p>Be the first to comment!</p>
-        }
-      }
-    </ul>
   </div>
 </div>
 <hr>
@@ -71,6 +37,32 @@
       <a href="#">Current</a>
     </div>
 </div>
+<hr>
 <div class="w-75">
-  <h3>Example Review</h3>
+  <div class="ml-2">
+    @{
+      if(@ViewBag.GameReviews != null)
+      {
+        @foreach (var review in @ViewBag.GameReviews)
+        {
+          if(@Model.GameId == @review.GameId)
+          {
+            <div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <h1 class="ml-3 mr-3">@review.GameRating</h1>
+                    <blockquote class="blockquote">
+                      <footer class="blockquote-footer"><cite title="Source Title">@review.CreatedBy.UserName </cite></footer>
+                    </blockquote>
+                  </div>
+                <p>@review.Review</p>
+              </div>
+            </div>
+          }
+        }
+      }
+      <h5 class="font-italic">Leave a review by <a href="">clicking here!</a></h5>
+    }
+
+  </div>
 </div>
