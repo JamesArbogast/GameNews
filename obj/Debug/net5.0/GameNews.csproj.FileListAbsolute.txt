@@ -51,7 +51,6 @@ C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.pdb
 C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.genruntimeconfig.cache
 C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Login.cshtml.g.cs
 C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Register.cshtml.g.cs
-C:/Users/james/OneDrive/Desktop/coding_dojo/CSharp/GameStock/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/appsettings.Development.json
 E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/appsettings.json
 E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.exe
