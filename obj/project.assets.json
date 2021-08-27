@@ -851,19 +851,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Myles\\.nuget\\packages\\": {}
+    "C:\\Users\\james\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj",
+      "projectUniqueName": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\GameNews.csproj",
       "projectName": "GameNews",
-      "projectPath": "C:\\Users\\Myles\\Desktop\\GameNews\\GameNews.csproj",
-      "packagesPath": "C:\\Users\\Myles\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Myles\\Desktop\\GameNews\\obj\\",
+      "projectPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\GameNews.csproj",
+      "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\james\\OneDrive\\Desktop\\coding_dojo\\CSharp\\GameStock\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Myles\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -924,7 +924,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -94,10 +94,10 @@ namespace GameStock.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-
-
+            
             Game game = db.Games
                 .Include(game => game.CreatedBy)
+                .ThenInclude(r => r.GameReviews)
                 // .Include(game => game.LikedGames)
                 // Include something from the last thing that was included.
                 // Include the User from the likes (hover over like param to see data type)
@@ -107,6 +107,19 @@ namespace GameStock.Controllers
             ViewBag.GameReviews = db.GameReviews
                 .Include(gamerev => gamerev.CreatedBy);
 
+            //finding the average score for the game
+            double length = 0;
+            double rating = 0;
+            foreach(GameReview gameRev in ViewBag.GameReviews)
+            {
+                length += 1;
+                rating += gameRev.GameRating;
+                Console.WriteLine(rating);
+            }
+
+            double average = Math.Round((rating/length), 2);
+            ViewBag.AvgScore = average;
+            
             if (game == null)
             {
                 return RedirectToAction("Details");
