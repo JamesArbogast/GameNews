@@ -91,11 +91,6 @@ namespace GameStock.Controllers
         [HttpGet("/games/{gameId}")]
         public IActionResult Details(int gameId)
         {
-            if (!isLoggedIn)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-
 
             Game game = db.Games
                 .Include(game => game.CreatedBy)
@@ -208,7 +203,7 @@ namespace GameStock.Controllers
         {
             if (!isLoggedIn)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("LogPage", "Home");
             }
 
             return View("ReviewGame");
