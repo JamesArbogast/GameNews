@@ -1,3 +1,177 @@
+<<<<<<< HEAD
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/appsettings.Development.json
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/appsettings.json
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.exe
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.deps.json
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.runtimeconfig.json
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.runtimeconfig.dev.json
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/ref/GameNews.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.pdb
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.Views.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/GameNews.Views.pdb
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Humanizer.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/MySqlConnector.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
+C:/Users/Myles/Desktop/GameNews/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.csproj.AssemblyReference.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.AssemblyInfoInputs.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.AssemblyInfo.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.csproj.CoreCompileInputs.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorAssemblyInfo.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorAssemblyInfo.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/staticwebassets/GameNews.StaticWebAssets.Manifest.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/staticwebassets/GameNews.StaticWebAssets.xml
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/scopedcss/bundle/GameNews.styles.css
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.TagHelpers.input.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.TagHelpers.output.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorCoreGenerate.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/Dashboard.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorTargetAssemblyInfo.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorTargetAssemblyInfo.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.Views.pdb
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.csproj.CopyComplete
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.dll
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/ref/GameNews.dll
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.pdb
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/GameNews.genruntimeconfig.cache
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Login.cshtml.g.cs
+C:/Users/Myles/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Register.cshtml.g.cs
+C:/Users/james/OneDrive/Desktop/coding_dojo/CSharp/GameStock/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/appsettings.Development.json
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/appsettings.json
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.exe
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.deps.json
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.runtimeconfig.json
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.runtimeconfig.dev.json
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/ref/GameNews.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.pdb
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.Views.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/GameNews.Views.pdb
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Humanizer.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/MySqlConnector.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Newtonsoft.Json.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/RestSharp.dll
+E:/Coding Dojo/C#/Asp/GameNews/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.csproj.AssemblyReference.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.GeneratedMSBuildEditorConfig.editorconfig
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.AssemblyInfoInputs.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.AssemblyInfo.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.csproj.CoreCompileInputs.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.MvcApplicationPartsAssemblyInfo.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.RazorAssemblyInfo.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.RazorAssemblyInfo.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/staticwebassets/GameNews.StaticWebAssets.Manifest.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/staticwebassets/GameNews.StaticWebAssets.xml
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/scopedcss/bundle/GameNews.styles.css
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.TagHelpers.input.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.TagHelpers.output.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.RazorCoreGenerate.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Game/Create.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Game/Dashboard.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Game/Details.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Game/EditGame.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Game/ViewGame.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Login.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Register.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_Footer.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.RazorTargetAssemblyInfo.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.RazorTargetAssemblyInfo.cs
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.Views.pdb
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.csproj.CopyComplete
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.dll
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/ref/GameNews.dll
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.pdb
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/GameNews.genruntimeconfig.cache
+E:/Coding Dojo/C#/Asp/GameNews/obj/Debug/net5.0/Razor/Views/Game/ReviewGame.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.dll
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/ref/GameNews.dll
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.pdb
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/appsettings.Development.json
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/appsettings.json
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.deps.json
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.runtimeconfig.json
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.runtimeconfig.dev.json
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/ref/GameNews.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.pdb
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.Views.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/GameNews.Views.pdb
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Humanizer.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/MySqlConnector.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/RestSharp.dll
+/Users/javanogden/Desktop/GameNews/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.csproj.AssemblyReference.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.GeneratedMSBuildEditorConfig.editorconfig
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.AssemblyInfoInputs.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.AssemblyInfo.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.csproj.CoreCompileInputs.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.MvcApplicationPartsAssemblyInfo.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorAssemblyInfo.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorAssemblyInfo.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/staticwebassets/GameNews.StaticWebAssets.Manifest.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/staticwebassets/GameNews.StaticWebAssets.xml
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/scopedcss/bundle/GameNews.styles.css
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.TagHelpers.input.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.TagHelpers.output.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorCoreGenerate.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/Create.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/Dashboard.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/Details.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/EditGame.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/ReviewGame.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Game/ViewGame.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Login.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Home/_Register.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_Footer.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorTargetAssemblyInfo.cache
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.RazorTargetAssemblyInfo.cs
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.Views.pdb
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.csproj.CopyComplete
+/Users/javanogden/Desktop/GameNews/obj/Debug/net5.0/GameNews.genruntimeconfig.cache
+=======
 C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\appsettings.json
 C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\GameNews.exe
@@ -178,3 +352,4 @@ C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Game\ViewGame.cshtm
 C:\Users\Myles\Desktop\GameNews\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
 C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Myles\Desktop\GameNews\bin\Debug\net5.0\RestSharp.dll
+>>>>>>> bdcdc379f69ddfac345ef2a55c26a78ab7bcff3e
