@@ -76,8 +76,10 @@ namespace GameStock.Controllers
             IRestResponse response = client.Execute(request);
             Console.WriteLine(client);
 
+
+
             List<Game> allGames = db.Games // hover over the param to see it's data type
-                                           // .Include(game => game.LikedGames)
+                .Include(r => r.GameReviews)                           // .Include(game => game.LikedGames)
                 .ToList();
 
             
@@ -119,7 +121,7 @@ namespace GameStock.Controllers
 
             double average = Math.Round((rating/length), 2);
             ViewBag.AvgScore = average;
-            
+
             if (game == null)
             {
                 return RedirectToAction("Details");

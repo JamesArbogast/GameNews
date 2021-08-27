@@ -21,10 +21,29 @@
           <div class="card-body">
             <p class="card-title h6"><a asp-controller="Game" asp-action="Details" asp-route-gameId="@game.GameId">@game.Name </a></p>
             <p class="card-text">@game.Description</p>
-            <p class="card-text">Current Stock: @game.CurrentRating</p>
+            <p class="card-text">Current Rating:
+              @{
+                double length = 0;
+                double score = 0;
+                @if(game.GameReviews != null) 
+                {
+                  @foreach (var review in game.GameReviews)
+                  {
+                      length ++;
+                      score += review.GameRating;
+                  }
+                  double average = Math.Round((score/length), 2);
+                  <p>@average</p>
+                }
+                else
+                {
+                  <p>Not enough reviews.</p>
+                }
+              }
+            </p>
             <p class="card-text"><small class="text-muted">Submitted: @game.CreatedAt</small></p>
             <form asp-controller="Game" asp-action="Review" method="GET" asp-route-gameId = "@game.GameId">
-              <button>Review</button>
+              <button style="btn btn-primary">Review</button>
             </form>
           </div>
         </div>
